@@ -118,3 +118,28 @@ function print(x) {
     console.log(x)
 }
 print("hello world")
+
+
+
+function printOneToNRecrussion(num) {
+    if (num == 0) {
+        return;
+    }
+
+    printOneToNRecrussion(num - 1)
+    console.log(num)
+}
+printOneToNRecrussion(5)
+
+
+console.log("break")
+
+function printOneToNRecrussionREV(num) {
+    if (num == 0) {
+        return;
+    }
+    console.log(num)
+    printOneToNRecrussionREV(num - 1)
+
+}
+printOneToNRecrussionREV(5)
